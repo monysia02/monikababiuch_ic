@@ -25,23 +25,23 @@ ec2_params = {
 try:
     fh = open(ec2InsDatafile, 'w')
 except:
-    print 'Error while opening file for write'
+    print('Error while opening file for write')
 
 for param, value in ec2_params.items():
     try:
-        responce = requests.get(meta_data +'/' + value)
+        response = requests.get(meta_data +'/' + value)
     except:
-        print "Error while making request"
-    if isinstance(responce.text,list):
-        print responce.text +': is list'
-        data = ' '.joint(responce.text)
+        print("Error while making request")
+    if isinstance(response.text,list):
+        print(response.text +': is list')
+        data = ' '.joint(response.text)
     else:
-        data = param +":"+responce.text
+        data = param +":"+response.text
     try:
           fh.write(data+'\r\n')
     except:
         print('Error during writing to file')
-        print data
+        print(data)
 
 #Getting  OS related if from system files
 
@@ -56,7 +56,7 @@ try:
     fh.write(os_vers_val+'\r\n')
     fh.write(os_usrs_val+'\r\n')
 except:
-    print "Error during write to file"
+    print("Error during write to file")
     fh.close()
 
 
