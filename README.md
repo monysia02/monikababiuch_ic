@@ -9,7 +9,7 @@ To verify the code:
 
 
 (Polish)
-Opis dla osoby sprawdzającej:
+Opis dla osoby sprawdzającej
 Aby sprawdzić działanie programu:
 - Zaloguj się na instancję EC2
 - Sprawdź czy program upload_s3.py znajduje się w katalogu domowym (cd /home/ubuntu -> ls)
