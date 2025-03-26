@@ -1,0 +1,10 @@
+Instance ID:i-0f75f3baabf3663fa
+Reservation ID:r-0f789ddddc53624d6
+Public IP:79.125.92.21
+Public Hostname:ec2-79-125-92-21.eu-west-1.compute.amazonaws.com
+Private IP:172.31.45.139
+Security Groups:r2d2-sg
+AMI ID:ami-0e9085e60087ce171
+OS NAME: "Ubuntu"
+OS VERSION: "24.04.1 LTS (Noble Numbat)"
+Login able users: root sshd fwupd-refresh ubuntu
